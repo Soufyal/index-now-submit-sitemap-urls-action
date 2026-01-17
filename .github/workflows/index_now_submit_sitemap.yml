@@ -1,8 +1,10 @@
 name: Submit Sitemap to IndexNow
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: 0 0 * * 0  # Run at midnight UTC every Sunday.
+    - cron: '0 3 * * *'
+
 
 permissions: read-all
 
